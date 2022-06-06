@@ -56,4 +56,29 @@
         color: var(--color-light);
         transition: all 0.5s ease-in-out;
     }
+    @media(max-width: 556px){
+        .contact-btn{
+            width: 300px;
+        }
+    }
+    @media(max-width: 333px){
+        .contact-btn{
+            width: 200px;
+        }
+        h1{
+            font-size: 2.2em;
+        }
+        h4{
+            font-size: .8em;
+        }
+
+    }
+    @media(max-width: 500px){
+        h1{
+            font-size: 2.9em;
+        }
+        h4{
+            font-size: 1.1em;
+        }
+    }
 </style>

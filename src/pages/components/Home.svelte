@@ -32,6 +32,12 @@
         display: grid;
         grid-template-columns: 10% auto;
     }
+    @media(max-width: 1092px){
+    .home{
+        grid-template-columns: 1fr;
+        height:auto;
+    }
+    }
     .textHome{
         height: 100vh;
         display: grid;
@@ -52,5 +58,16 @@
         background-color: var(--color-primary);
         color: var(--color-light);
         transition: all .5s ease-in-out;
+    }
+    @media(max-width: 500px){
+        h1{
+            font-size: 2.5em;
+        }
+        h2{
+            font-size: 2.2em;
+        }
+        h3{
+            font-size: 1.5em;
+        }
     }
 </style>

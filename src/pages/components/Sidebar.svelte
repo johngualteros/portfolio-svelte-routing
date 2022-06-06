@@ -56,9 +56,12 @@
     .container-sidebar{
         width: 100%;
         height: 100px;
-        top: 0;
+        position: fixed;
+        top: 85%;
+        buttom: 0;
         left: 0;
-        transform: translateY(0);
+        right: 0;
+        transform: translateX(0);
         background-color: var(--color-primary);
         overflow-y: auto;
         z-index: 2;
@@ -84,6 +87,11 @@
     .icon-box:hover{
         transition: all .5s ease-in-out;
         background-color: var(--color-dark);
+    }
+}
+@media(max-width:980px){
+    .container-sidebar{
+        top: 80%;
     }
 }
 </style>

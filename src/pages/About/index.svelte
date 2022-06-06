@@ -114,12 +114,14 @@
     .about{
         background-color: var(--color-light);
         color: var(--color-dark);
-        height: 100vh;
+        height: auto;
         padding-left:15%;
         overflow: hidden;
         width: 100%;
         display:grid;
         grid-template-columns: 50% 50%;
+        padding-top:80px ;
+        padding-bottom:90px ;
     }
     .darkmode{
         background-color: var(--color-dark);
@@ -128,6 +130,7 @@
         display:flex;
         justify-content: center;
         margin-top:70px;
+        margin-bottom:70px;
     }
     .container{
         display:grid;
@@ -140,5 +143,35 @@
         background-color: var(--color-primary);
         text-align: center;
         color: var(--color-light);
+    }
+    @media(max-width: 1092px){
+        .about{
+            grid-template-columns: 80%;
+            grid-template-rows: auto auto;
+            place-content: center;
+            place-items: center;
+            gap:20px;
+            padding-left:0 ;
+            height: auto;
+        }
+    }
+    @media(max-width: 500px){
+        h1{
+            font-size: 2.9em;
+        }
+        h2{
+            font-size: 2.6em;
+        }
+        h4{
+            font-size: 1.1em;
+        }
+        .container{
+            grid-template-columns: 100%;
+        }
+    }
+    @media (max-width: 315px) {
+        h2{
+            font-size: 2.1em;
+        }
     }
 </style>

@@ -15,6 +15,7 @@
     .switch-container{
         border-radius:30px;
         margin: 0 10px;
+        z-index:5;
     }
     .circle{
         outline: none;

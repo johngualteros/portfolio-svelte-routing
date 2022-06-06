@@ -89,8 +89,7 @@
 {/if}
 <style>
     h2{
-        margin-left: 330px;
-        margin-bottom: 20px;
+        text-align: center;
     }
     p{
         font-weight: bold;
@@ -107,14 +106,23 @@
     }
     .projects{
         width: 100%;
-        height: 100vh;
-        padding-left:17%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 0px;
     }
     .projects-dark{
         width: 100%;
-        height: 100vh;
-        padding-left:17%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         background-color: var(--color-dark);
+        padding: 80px 0px;
+
     }
     :global(.projects-dark h2, .projects-dark p){
         color: var(--color-light);
@@ -134,5 +142,33 @@
     .project-link{
         text-align: right;
         cursor: pointer;
+    }
+    @media(max-width: 1092px){
+        .project-container{
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+        }
+    }
+    @media(max-width: 912px){
+        .project{
+            height: 20vh;
+        }
+    }
+    @media(max-width: 740px){
+        .project-container{
+            grid-template-columns: repeat(2, minmax(250px, 1fr));
+        }
+    }
+    @media(max-width: 650px){
+        .project-container{
+            grid-template-columns: repeat(1, minmax(300px, 1fr));
+        }
+    }
+    @media(max-width:391px){
+        .project-container{
+            grid-template-columns: repeat(1, minmax(220px, 1fr));
+        }
+        h2{
+            font-size: 1.5rem;
+        }
     }
 </style>

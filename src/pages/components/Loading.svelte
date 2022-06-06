@@ -5,7 +5,7 @@
 <div class={$darkmode?'loader-dark':'loader'}>
     
     <h1>John Gualteros 🦄</h1>
-    <BarLoader size="330" color="#1f8bff" unit="px" duration="6s"/>
+    <BarLoader  class="barloader" size="330" color="#1f8bff" unit="px" duration="6s"/>
     
 </div>
 <style>
@@ -17,6 +17,7 @@
         margin: auto;
         width: 100%;
         height: 100vh;
+        overflow: hidden;
     }
     .loader-dark{
         background-color: var(--color-dark);
@@ -25,5 +26,15 @@
         place-items: center;
         width: 100%;
         height: 100vh;
+    }
+    @media(max-width: 680px){
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    @media(max-width: 380px){
+        h1{
+            font-size: 2rem;
+        }
     }
 </style>
